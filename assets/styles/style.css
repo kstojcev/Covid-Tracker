@@ -1,0 +1,179 @@
+/* Home Page */
+* {
+  /* font-family: "Noto Sans", sans-serif; */
+  font-family: "Roboto", sans-serif;
+  /* font-family: "Times New Roman", Times, serif; */
+  /* font-family: "Quicksand", sans-serif; */
+}
+
+a {
+  color: unset !important;
+}
+
+nav {
+  font-size: 18px;
+  /* color: #242a33; */
+}
+
+nav a:hover {
+  color: red !important;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.navbar-toggler {
+  font-size: 30px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.fa-sliders-h {
+  font-size: 30px;
+}
+
+.fa-sliders-h:hover {
+  cursor: pointer;
+}
+
+.modal-header {
+  font-size: 18px;
+}
+
+.filterBtn {
+  font-size: 18px;
+  background-color: rgb(238, 238, 238);
+  padding: 10px 20px;
+  border: 2px solid rgb(167, 23, 23);
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+.filterBtn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(175, 175, 175);
+  transition: 0.2s;
+}
+
+.clickedBtn {
+  color: white;
+  background: linear-gradient(
+    135deg,
+    rgb(219, 114, 106) 0%,
+    rgb(167, 23, 23) 100%
+  );
+  transition: 0.3s;
+}
+
+.allData {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dataStyle {
+  padding: 1%;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.dataStyle div {
+  display: flex;
+  align-items: center;
+}
+
+.confirmed {
+  color: rgb(7, 152, 196);
+}
+.recovered {
+  color: rgb(3, 163, 3);
+}
+.deaths {
+  color: rgb(255, 0, 0);
+}
+
+.theadCountries {
+  background: grey !important;
+}
+.theadConfirmed {
+  background: rgb(7, 152, 196) !important;
+}
+.theadRecovered {
+  background: rgb(50, 177, 50) !important;
+}
+.theadDeaths {
+  background: rgb(231, 33, 33) !important;
+}
+
+.tdConfirmed {
+  background: rgba(7, 152, 196, 0.5) !important;
+}
+.tdRecovered {
+  background: rgba(50, 177, 50, 0.5) !important;
+}
+.tdDeaths {
+  background: rgba(231, 33, 33, 0.5) !important;
+}
+
+/* Countries Page*/
+
+#countrySelect {
+  padding: 17px;
+  padding-left: 5px;
+  padding-right: 5px;
+  letter-spacing: 2px;
+  border: 0;
+  border-bottom: 2px solid #cf0202;
+  background: none;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+#countrySelect:focus-visible {
+  outline: none !important;
+}
+
+/* Measures Page*/
+
+/* Responsive Design*/
+@media only screen and (max-width: 769px) {
+  .dataStyle {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .filters {
+    display: flex;
+  }
+  .filterBtn {
+    font-size: 14px;
+    margin: 2px 4px;
+  }
+  #globalDataTitle {
+    font-size: 25px;
+  }
+  .allData {
+    display: block;
+  }
+  .dataStyle {
+    width: 100%;
+    padding: 1%;
+    font-size: 16px;
+    margin: 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .dataStyle {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  h2 {
+    font-size: 20px;
+  }
+}
